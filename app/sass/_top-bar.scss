@@ -1,9 +1,27 @@
 .top-bar {
   background-color: $black;
 }
+.navbar-lg {
+  display: block;
+  @include medium-desktop {
+    display: none;
+  }
+}
+.navbar-md {
+  display: none;
+  @include medium-desktop {
+    display: block;
+  }
+}
 .navbar {
   margin-bottom: 0;
   padding: 24px;
+
+}
+.visible-sm {
+  @include medium-desktop-lg {
+    display: block;
+  }
 }
 .navbar-nav {
   width: 100%;
@@ -41,7 +59,7 @@
     background-color: $black;
   }
 }
-.hidden-lg {
+.navbar {
   background-color: $black;
   border-color: $black;
 }
