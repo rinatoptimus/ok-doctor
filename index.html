@@ -9,6 +9,45 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
+    <div class="top-bar">
+        <nav class="visible-lg hidden-sm navbar navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Главная</a></li>
+                        <li><a href="#">Запись</a></li>
+                        <li><a href="#">Врачи</a></li>
+                        <li><a href="#">О нас</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <nav class="hidden-lg visible-sm visible-xs navbar navbar-default" role="navigation">
+            <div class="col-sm-6 col-md-offset-1 col-sm-offset-3">
+                <div class="selectwrap">
+                    <select class="form-control" name="" id="">
+                        <option>Главная</option>
+                        <option value="#test">Запись</option>
+                        <option>Врачи</option>
+                        <option>О нас</option>
+                    </select>
+
+
+                </div>
+            </div>
+        </nav>
+    </div><!-- top-bar -->
+
     <div class="bg-jumbotron">
         <div class="container">
             <div class="row">
@@ -16,10 +55,25 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <h1 class="service-name text-uppercase"><span class="letter-o">O</span><span class="letter-k">k</span><span class="single-quote">'</span><span class="doc">Doctor</span></h1>
-                            <small>Мы помогаем быстро и без проблем записаться к любому медицинскому специалисту в Казани всего за 1 звонок!</small>
+                            <small>Персональный подбор врача в лучших платных клиниках Казани.</small>
+                            <ul class="bullits">
+                                <li>
+                                    <p><i class="fa fa-check-square-o fa-2" aria-hidden="true"></i> Выберем для Вас нужного врача с учетом Вашего возраста, симптомов, прежнего лечения.</p>
+                                </li>
+                                <li>
+                                    <p><i class="fa fa-check-square-o fa-2" aria-hidden="true"></i> Запишем на прием в удобное время и место.</p>
+                                </li>
+                                <li>
+                                    <p><i class="fa fa-check-square-o fa-2" aria-hidden="true"></i> Напомним о приеме и назначениях.</p>
+                                </li>
+                                <li>
+                                    <p><i class="fa fa-check-square-o fa-2" aria-hidden="true"></i> Будем на связи с Вами до выздоровления.</p>
+                                </li>
+                            </ul>
                         </div>
                         <div class="col-lg-12">
-                            <input class="btn text-uppercase btn-know-more" type="submit" value="Узнать больше">
+                            <!--<input class="btn text-uppercase btn-know-more" type="submit" value="Узнать больше">-->
+                            <a class="btn text-uppercase btn-know-more" href="#container-how">Узнать больше</a>
                         </div>
                     </div>
                 </div>
@@ -27,24 +81,24 @@
                     <div class="well jumbotron-well">
                         <h5>Уже работает с картами:</h5>
                         <div class="row text-center">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-4 col-left">
                                 <div class="card card-one"></div>
                                 <div class="card card-two"></div>
                                 <div class="card card-three"></div>
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-lg-8 col-md-7">
                                 <form action="" method="POST">
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <input class="form-control" type="phone" name="" placeholder="Введите Ваш номер телефона">
-                                            <input class="btn btn-default text-uppercase" type="submit" value="Записаться">
+                                            <input class="form-control input-phone-first" type="phone" name="" placeholder="Введите Ваш номер телефона">
+                                            <input class="btn btn-default text-uppercase btn-jumbotron-first" type="submit" value="Записаться">
                                         </div>
                                     </div>
                                 </form>
-                                <p>Еще нет карты?</p>
+                                <p class="form-text-title">Еще нет карты?</p>
                                 <p class="form-text form-text-first">Приобретите карту всего за 300 рублей и получите возможность быстрой записи в любую платную клинику г. Казани буквально за несколько минут!</p>
                                 <p class="form-text form-text-second">Один звонок - и специалисты проконсультируют Вас по любым вопросам, связанным с медицинским обслуживанием и подберут удобное время для посещения нужного врача.</p>
-                                <input class="btn btn-default text-uppercase" type="submit" value="Купить карту">
+                                <input class="btn btn-default text-uppercase btn-jumbotron-buy" type="submit" value="Купить карту">
                             </div>
                         </div>
                     </div>
@@ -55,11 +109,11 @@
 
     <div class="container">
         <div class="row text-center">
-            <form class="form-inline">
+            <form class="form-inline form">
                 <div class="form-group">
-                    <input name="" type="phone" class="form-control" id="" placeholder="Ваш номер телефона">
+                    <input name="" type="tel" class="form-control input-phone-second" id="" placeholder="Ваш номер телефона">
                 </div>
-                <button type="submit" class="btn btn-default">Записаться</button>
+                <button type="submit" class="btn btn-default btn-sign-in-second text-uppercase">Записаться</button>
             </form>
         </div>
     </div><!-- input-sign-in-phone -->
@@ -84,14 +138,15 @@
     </div><!-- parallax -->
 
 
-    <div class="container">
+    <div class="container container-border">
         <div class="row text-center">
             <div class="col-lg-12">
                 <form action="" method="" class="form-horizontal">
                     <div class="form-group">
-                        <label for="" class="col-lg-2 col-lg-offset-2 control-label">Выберите врача:</label>
-                        <div class="col-lg-6">
+                        <label for="" class="col-lg-2 col-md-4 col-lg-offset-2 control-label">Выберите врача:</label>
+                        <div class="col-lg-6 col-md-8">
                             <select class="form-control">
+                                <option>Выберите специалиста</option>
                                 <option>Уролог</option>
                                 <option>ЛОР</option>
                                 <option>Невролог</option>
@@ -100,7 +155,7 @@
                             </select>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-default">Записаться</button>
+                    <button type="submit" class="btn btn-default btn-select-submit text-uppercase">Записаться</button>
                 </form>
             </div>
         </div>
@@ -108,8 +163,8 @@
 
     <div class="container">
         <div class="row">
-            <h2>Почему мы?</h2>
-            <div class="col-lg-3">
+            <h2 class="text-center">Почему мы?</h2>
+            <div class="col-lg-3 col-md-3">
                 <div class="thumbnail caption text-center">
                     <div class="why-img why-img-clock"></div>
                     <div class="caption">
@@ -118,7 +173,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-3">
                 <div class="thumbnail caption text-center">
                     <div class="why-img why-img-sofa"></div>
                     <div class="caption">
@@ -127,7 +182,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-3">
                 <div class="thumbnail caption text-center">
                     <div class="why-img why-img-graph"></div>
                     <div class="caption">
@@ -136,7 +191,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-3">
                 <div class="thumbnail caption text-center">
                     <div class="why-img why-img-coin"></div>
                     <div class="caption">
@@ -148,56 +203,23 @@
         </div>
     </div><!-- why-we -->
 
-    <div class="container">
+    <div class="container container-how container-border" id="container-how">
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-3">
                 <div class="character-woman"></div>
             </div>
-            <div class="col-lg-9">
-                <p>Еще немного о нас</p>
-                <p>Как работает сервис?</p>
-                <p>Мы разработали уникальный сервис записи к лучшим платным врачам города - вы можете выбрать специалиста, время приема, записаться в несколько кликов - всё, что останется, только придти в назначенное время.
+            <div class="col-lg-9 col-md-9">
+                <p class="how-title-upper">Еще немного о нас</p>
+                <p class="how-title-main">Как работает сервис?</p>
+                <p class="how-text">Мы разработали уникальный сервис записи к лучшим платным врачам города - вы можете выбрать специалиста, время приема, записаться в несколько кликов - всё, что останется, только придти в назначенное время.
                     Если в списке на онлайн запись вы не нашли нужного врача (к сожалению, пока такое бывает), наши специалисты свяжутся с Вами и подберут ЛЮБОГО врача по телефону.</p>
-                <a href="#">Заказать звонок специалиста</a>
+                <a class="how-link" href="#">Заказать звонок специалиста</a>
             </div>
         </div>
     </div><!-- how -->
 
-    <div class="container">
-        <div class="row text-center">
-            <p>Пользоваться нашим сервисом</p>
-            <p class="text-uppercase">Очень просто</p>
-            <div class="col-lg-4">
-                <div class="thumbnail caption text-center">
-                    <div class="instruction-img instruction-img-one"></div>
-                    <div class="caption">
-                        <h3>Выберите специалиста</h3>
-                        <p>Лучшие врачи города готовы Вас принять</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="thumbnail caption text-center">
-                    <div class="instruction-img instruction-img-two"></div>
-                    <div class="caption">
-                        <h3>Подберите время приема</h3>
-                        <p>Вы сможете выбрать самое удобное время</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="thumbnail caption text-center">
-                    <div class="instruction-img instruction-img-three"></div>
-                    <div class="caption">
-                        <h3>Приходите на прием</h3>
-                        <p>В выбранное время Вас уже будут ждать в клинике</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><!-- instruction -->
 
-    <div class="container">
+    <div class="container container-any-questions">
         <div class="row">
             <h2>Остались вопросы? Наши специалисты помогут записаться к врачу!</h2>
         </div>
@@ -206,18 +228,38 @@
     <div class="bg-trigger-button">
         <div class="container">
             <div class="row text-center">
-                <input class="btn btn-default" type="submit" value="Звонок специалиста">
+                <!--<input class="btn btn-default" type="submit" value="Звонок специалиста">-->
+                <a class="trigger-btn" href="#">Звонок специалиста</a>
             </div>
         </div>
-    </div><!-- trigger-button -->
+    </div><!-- trigger-btn -->
 
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <p>&copy; 2016 OK'DOCTOR</p>
+                    <p class="copyright">&copy; 2016 OK'DOCTOR</p>
                 </div>
-                <div class="col-lg-8"></div>
+                <div class="col-lg-6">
+                    <ul class="nav-footer">
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#">Запись</a>
+                        </li>
+                        <li>
+                            <a href="#">Врачи</a>
+                        </li>
+                        <li>
+                            <a href="#">О нас</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <a class="link-to-top" href="">Наверх</a>
+                    <i class="fa fa-long-arrow-up fa-1" aria-hidden="true"></i>
+                </div>
             </div>
         </div>
     </footer>

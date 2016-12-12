@@ -1,20 +1,52 @@
 .bg-jumbotron {
+  margin-bottom: 87px;
   padding-bottom: 30px;
   background-size: cover;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.65)), url('../img/bg-jumbotron.jpg') no-repeat;
   background-position: 15% 11%;
   background-size: 100%;
   color: $white;
+  @include large-desktop {
+    background: linear-gradient(rgb(13,90,121), rgb(28,143,189));
+}
 }
 .service-name {
   margin-top: 82px;
   margin-bottom: 2px;
   font-size: 76px;
 }
+.letter-o {
+  color: $letter-o;
+}
+.letter-k {
+  color: $letter-k;
+}
+.doc {
+  color: $doc;
+}
+.single-quote {
+  color: $single-quote;
+}
+.bullits {
+  margin-top: 20px;
+  padding-left: 0;
+    li {
+      list-style: none;
+      p {
+        margin-bottom: 30px;
+        font-size: 16px;
+        .fa {
+          font-size: 18px;
+        }
+      }
+    }
+}
 small {
   display: inline-block;
   width: 335px;
   line-height: 19px;
+  font-family: 'Open Sans';
+  font-size: 13px;
 }
 .btn-know-more {
   margin-top: 22px;
@@ -30,27 +62,52 @@ small {
     color: $black;
   }
 }
-//.btn-default:hover
+
+
+
 .jumbotron-well {
   width: 615px;
   margin-top: 86px;
-  padding: 0 14px;
+  padding-top: 6px;
+  padding-bottom: 23px;
   border-radius: 14px;
   background-color: rgba(0, 0, 0, .4);
   border: none;
   color: $white;
+  @include large-desktop {
+    width: 940px;
+  }
     h5 {
       display: inline-block;
       width: 170px;
       font-size: 20px;
       text-align: center;
+      @include large-desktop {
+        width: 250px;
+        margin-left: 110px;
+      }
     }
 }
-.form-control {
-  width: 86%;
+.col-left {
+  @include large-desktop {
+    margin-left: 75px;
+    padding-left: 95px;
+  }
+}
+form {
+  margin-top: -16px;
+}
+.input-phone-first {
+  width: 79%;
+  height: 37px;
   margin: 0 auto;
   font-size: 16px;
   text-align: center;
+  border: 2px solid $input-border;
+  border-radius: 9px;
+  @include large-desktop {
+    width: 64%;
+  }
 }
 .btn-default {
   padding: 15px 25px;
@@ -59,15 +116,58 @@ small {
   border: none;
   font-weight: 600;
 }
+.btn-jumbotron-first {
+  margin-top: 13px;
+  padding: 16px 100px;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.55;
+  font-weight: 600;
+  color: $white;
+  background-color: $blue-light;
+  &:hover {
+    color: $white;
+    background-color: $btn-sign-in;
+  }
+}
 .form-text {
   display: inline-block;
 }
-.form-text-first {
-  width: 268px;
+.form-text-title {
+  font-size: 28px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+}
+.form-text-first, .form-text-second {
+  width: 336px;
+  font-family: 'Open Sans';
+  line-height: 1.3;
+  font-weight: 400;
+  font-size: 14px;
 }
 .form-text-second {
-  width: 288px;
   margin-top: 6px;
+  margin-bottom: 20px;
+  @include large-desktop {
+    width: 400px;
+  }
+}
+.btn-jumbotron-buy {
+  padding: 11px 48px;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Arial';
+  line-height: 1.55;
+  font-weight: 600;
+  border-width: 1px;
+  border-radius: 30px;
+  background-color: $btn-jumbotron-buy;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  &:hover {
+    color: $white;
+    background-color: $btn-jumbotron-buy-hover;
+  }
 }
 .card {
   width: 202px;
@@ -75,14 +175,21 @@ small {
   box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, .5);
 }
 .card-one {
-  height: 126px;
-  background: url('../img/card1.jpg') no-repeat;
+  width: 162px;
+  height: 101px;
+  background: url(../img/card1.jpg) no-repeat;
+  background-size: 100%;
+
 }
 .card-two {
-  height: 117px;
+  width: 162px;
+  height: 94px;
   background: url('../img/card2.jpg') no-repeat;
+  background-size: 100%;
 }
 .card-three {
-  height: 127px;
+  width: 163px;
+  height: 100px;
   background: url('../img/card3.jpg') no-repeat;
+  background-size: 100%;
 }

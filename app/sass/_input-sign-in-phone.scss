@@ -1,0 +1,24 @@
+.input-phone-second {
+  padding: 0 162px 0 10px;
+  height: 60px;
+  font-size: 16px;
+  line-height: 1.33;
+  border: 1px solid $input-phone-second;
+  border-radius: 0;
+  font-family: 'Roboto',sans-serif;
+}
+.btn-sign-in-second {
+  height: 60px;
+  margin-left: 17px;
+  padding: 0 60px;
+  font-size: 16px;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 700;
+  border-radius: 0;
+  color: $white;
+  background-color: $btn-sign-in-second;
+  &:hover {
+    color: $white;
+    background-color: $btn-sign-in-second-hover;
+  }
+}

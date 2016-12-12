@@ -1,7 +1,11 @@
+h2 {
+  margin-top: 37px;
+  margin-bottom: 84px;
+}
 .why-img {
   width: 100px;
   height: 100px;
-  margin: 0 auto;
+  margin: 0 auto 0;
 }
 .why-img-clock {
   background: url('../img/clock.png') no-repeat;
@@ -14,4 +18,18 @@
 }
 .why-img-coin {
   background: url('../img/coin.png') no-repeat;
+}
+.thumbnail {
+  border: none;
+    .caption {
+      h3 {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-size: 24px;
+        font-weight: 600;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
 }

@@ -1,3 +1,18 @@
 .bg-trigger-button {
+  padding: 97px;
   background-color: $bg-trigger-button;
+}
+.trigger-btn {
+  padding: 18px 70px;;
+  //background-color: $blue-light;
+  border: 2px solid $white;
+  //border-radius: 25px;
+  font-weight: 600;
+  font-family: 'Roboto',sans-serif;
+  color: $white;
+  &:hover {
+    color: $btn-sign-in;
+    text-decoration: none;
+    background-color: $white;
+  }
 }

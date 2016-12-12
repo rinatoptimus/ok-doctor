@@ -1,0 +1,86 @@
+.top-bar {
+  background-color: $black;
+}
+.navbar {
+  margin-bottom: 0;
+  padding: 24px;
+}
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+  .active {
+    color: $link-active;
+    border-bottom: 1px solid $active-link-border;
+  }
+   li {
+     margin-right: -6px;
+     padding: 0 30px;
+     border-bottom: 1px solid $white;
+     &:hover {
+       margin-bottom: -3px;
+       padding: 0 30px;
+       border-bottom: 3px solid $white;
+     }
+       a {
+         font-size: 16px;
+         font-family: 'Roboto',sans-serif;
+         font-weight: 600;
+       }
+   }
+}
+.navbar-nav > li {
+  float: none;
+  display: inline-block;
+}
+.navbar-inverse {
+  background-color: $black;
+}
+.navbar-inverse .navbar-nav>.active>a {
+  background-color: $black;
+  &:hover {
+    background-color: $black;
+  }
+}
+.hidden-lg {
+  background-color: $black;
+  border-color: $black;
+}
+select {
+  border: 1px solid #ccc;
+  height: 34px;
+  //width: 250px;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  border: 1px solid #4c80e0;
+  color: #4c80e0;
+}
+.selectwrap {
+  position: relative;
+    .form-control {
+      height: 48px;
+      font-family: 'Roboto',sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: $link-active;
+      border-radius: 0;
+      border: 1px solid $link-active;
+      background: $black;
+        option {
+          color: $link-active;
+        }
+    }
+}
+.selectwrap:after {
+  //content: "↓";
+  content: '▾';
+  text-align: center;
+  line-height: 18px;
+  position: absolute;
+  width: 30px;
+  height: 23px;
+  background: $black;
+  right: 5px;
+  top: 15px;
+  pointer-events: none;
+  color: $link-active;
+}

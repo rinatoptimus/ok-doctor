@@ -1,5 +1,37 @@
+.container-how {
+  margin-top: 115px;
+    .row {
+      .col-md-9 {
+        padding-left: 70px;
+      }
+    }
+}
 .character-woman {
   width: 309px;
   height: 309px;
   background: url('../img/character-woman.png') no-repeat;
+}
+.how-title-upper {
+  font-family: 'Roboto',sans-serif;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  color: $black;
+}
+.how-title-main {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: 'Roboto',sans-serif;
+  color: $black;
+}
+.how-text {
+  width: 575px;
+  font-size: 18px;
+  line-height: 1.55;
+}
+.how-link {
+  display: block;
+  margin-top: 29px;
+  font-size: 18px;
+  font-weight: bold;
+  color: $how-link;
 }

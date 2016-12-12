@@ -1,7 +1,22 @@
+.instruction-title-upper {
+  margin-top: 90px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: $black;
+}
+.instruction-title-main {
+  margin-bottom: 30px;
+}
+.service-name {
+  line-height: 1.23;
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
 .instruction-img {
   width: 100px;
   height: 100px;
-  margin: 0 auto;
+  margin: 0 auto 7px;
 }
 .instruction-img-one {
   background: url('../img/1.png') no-repeat;
@@ -11,4 +26,17 @@
 }
 .instruction-img-three {
   background: url('../img/3.png') no-repeat;
+}
+.thumbnail {
+  .caption {
+    h3 {
+      font-size: 24px;
+      line-height: 30px;
+      font-family: 'Roboto',sans-serif;
+      font-weight: 600;
+    }
+    p {
+      margin-top: -15px;
+    }
+  }
 }

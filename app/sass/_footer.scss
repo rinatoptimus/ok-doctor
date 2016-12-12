@@ -1,0 +1,27 @@
+footer {
+  height: 130px;
+  background-color: $bg-footer;
+  color: $white;
+}
+.nav-footer {
+  padding-left: 20px;
+    li {
+      float: left;
+      padding: 18px;
+      list-style: none;
+        a {
+          font-family: 'Roboto',sans-serif;
+          font-weight: 600;
+          color: $white;
+        }
+    }
+}
+.col-lg-4, .col-lg-2 {
+  padding-top: 20px;
+}
+.link-to-top {
+  color: $white;
+  &:hover {
+    color: $white;
+  }
+}
