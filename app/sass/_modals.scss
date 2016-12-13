@@ -1,8 +1,41 @@
 #myModal-sign-in-first {
   .modal-dialog {
     .modal-content {
-      .modal-header {
-        margin-bottom: 20px;
+      padding: 20px;
+      text-align: center;
+        .modal-header {
+          border-bottom: none;
+            .modal-title {
+              font-size: 36px;
+              font-family: 'Roboto', sans-serif;
+              font-weight: 600;
+            }
+          small {
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+          }
+        }
+      .modal-body {
+        form {
+          .form-group {
+            input {
+              height: 55px;
+              margin-bottom: 40px;
+            }
+          }
+          button {
+            padding: 19px 212px;
+            background-color: $btn-modal;
+            border: none;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            &:hover {
+              background-color: $btn-modal-hover;
+            }
+          }
+        }
       }
     }
   }

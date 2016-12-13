@@ -26,9 +26,9 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#">Главная</a></li>
-                            <li><a href="#">Запись</a></li>
-                            <li><a href="#">Врачи</a></li>
-                            <li><a href="#">О нас</a></li>
+                            <li><a href="#sign-in">Запись</a></li>
+                            <li><a href="#element-to-animate3">Врачи</a></li>
+                            <li><a href="#element-to-animate5">О нас</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
@@ -37,11 +37,11 @@
             <nav class="navbar navbar-default navbar-md" role="navigation">
                 <div class="col-sm-6 col-md-offset-1 col-sm-offset-3">
                     <div class="selectwrap">
-                        <select class="form-control" name="" id="">
-                            <option>Главная</option>
-                            <option value="#test">Запись</option>
-                            <option>Врачи</option>
-                            <option>О нас</option>
+                        <select class="form-control" name="" id="" onchange="location = this.options[this.selectedIndex].value;">
+                            <option value="#">Главная</option>
+                            <option value="#sign-in">Запись</option>
+                            <option value="#element-to-animate3">Врачи</option>
+                            <option value="#element-to-animate5">О нас</option>
                         </select>
                     </div>
                 </div>
@@ -107,13 +107,13 @@
             </div>
         </div><!-- jumbotron -->
 
-        <div class="container">
+        <div class="container" id="sign-in">
             <div class="row text-center">
                 <form class="form-inline form">
                     <div class="form-group">
                         <input name="" type="tel" class="form-control input-phone-second" id="" placeholder="Ваш номер телефона">
                     </div>
-                    <button type="submit" class="btn btn-default btn-sign-in-second text-uppercase">Записаться</button>
+                    <button data-toggle="modal" data-target="#myModal-sign-in-first" type="submit" class="btn btn-default btn-sign-in-second text-uppercase">Записаться</button>
                 </form>
             </div>
         </div><!-- input-sign-in-phone -->
@@ -589,7 +589,7 @@
                             <div class="form-group">
                                 <input type="tel" class="form-control" id="phone" placeholder="Ваш телефон">
                             </div>
-                            <button type="submit" class="btn btn-info">Записаться</button>
+                            <button type="submit" class="btn btn-info text-uppercase">Записаться</button>
                         </form>
                     </div>
                 </div>
