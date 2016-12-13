@@ -1,0 +1,33 @@
+.parallax {
+  //background: url('http://lorempixel.com/1280/700/food/5') no-repeat center center fixed;
+  background: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+  ), url('https://static.tildacdn.com/tild3035-3930-4062-b062-626431653131/-/gotovybiznesmeditsina.jpg') no-repeat center center fixed;
+  display: table;
+  margin-bottom: 57px;
+  padding:20px;
+  height: 30vh;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: $white;
+    div.text-center {
+      margin-top: 50px;
+      h4 {
+        font-size: 46px;
+        font-family: 'Open Sans',serif;
+        font-weight: 300;
+      }
+      p {
+        font-size: 28px;
+        line-height: 1.55;
+        max-width: 700px;
+        display: inline;;
+      }
+    }
+
+}

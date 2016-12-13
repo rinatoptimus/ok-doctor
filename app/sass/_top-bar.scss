@@ -61,7 +61,10 @@
 }
 .navbar {
   background-color: $black;
-  border-color: $black;
+  border: none;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: $white;
 }
 select {
   border: 1px solid #ccc;

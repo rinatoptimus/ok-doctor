@@ -2,269 +2,606 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OK Doctor</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="app/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
-<body>
-    <div class="top-bar">
-        <nav class="navbar navbar-inverse navbar-lg" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
+    <body id="top">
+        <div class="top-bar">
+            <nav class="navbar navbar-inverse navbar-lg" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Главная</a></li>
-                        <li><a href="#">Запись</a></li>
-                        <li><a href="#">Врачи</a></li>
-                        <li><a href="#">О нас</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Главная</a></li>
+                            <li><a href="#">Запись</a></li>
+                            <li><a href="#">Врачи</a></li>
+                            <li><a href="#">О нас</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
 
-        <nav class="navbar navbar-default navbar-md" role="navigation">
-            <div class="col-sm-6 col-md-offset-1 col-sm-offset-3">
-                <div class="selectwrap">
-                    <select class="form-control" name="" id="">
-                        <option>Главная</option>
-                        <option value="#test">Запись</option>
-                        <option>Врачи</option>
-                        <option>О нас</option>
-                    </select>
-
-
-                </div>
-            </div>
-        </nav>
-    </div><!-- top-bar -->
-
-    <div class="bg-jumbotron">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="row">
-                        <div class="col-lg-12 col-bullits">
-                            <h1 class="service-name text-uppercase"><span class="letter-o">O</span><span class="letter-k">k</span><span class="single-quote">'</span><span class="doc">Doctor</span></h1>
-                            <small>Персональный подбор врача в лучших платных клиниках Казани.</small>
-                            <ul class="bullits">
-                                <li>
-                                    <p><i class="fa fa-check-square-o fa-2" aria-hidden="true"></i> Выберем для Вас нужного врача с учетом Вашего возраста, симптомов, прежнего лечения.</p>
-                                </li>
-                                <li>
-                                    <p><i class="fa fa-check-square-o fa-2" aria-hidden="true"></i> Запишем на прием в удобное время и место.</p>
-                                </li>
-                                <li>
-                                    <p><i class="fa fa-check-square-o fa-2" aria-hidden="true"></i> Напомним о приеме и назначениях.</p>
-                                </li>
-                                <li>
-                                    <p><i class="fa fa-check-square-o fa-2" aria-hidden="true"></i> Будем на связи с Вами до выздоровления.</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-12 col-bullits">
-                            <!--<input class="btn text-uppercase btn-know-more" type="submit" value="Узнать больше">-->
-                            <a class="btn text-uppercase btn-know-more" href="#container-how">Узнать больше</a>
-                        </div>
+            <nav class="navbar navbar-default navbar-md" role="navigation">
+                <div class="col-sm-6 col-md-offset-1 col-sm-offset-3">
+                    <div class="selectwrap">
+                        <select class="form-control" name="" id="">
+                            <option>Главная</option>
+                            <option value="#test">Запись</option>
+                            <option>Врачи</option>
+                            <option>О нас</option>
+                        </select>
                     </div>
                 </div>
-                <div class="col-lg-7">
-                    <div class="well jumbotron-well">
-                        <h5>Уже работает с картами:</h5>
-                        <div class="row text-center">
-                            <div class="col-lg-4 col-md-4 col-sm-12 col-left">
-                                <div class="card card-one"></div>
-                                <div class="card card-two"></div>
-                                <div class="card card-three"></div>
+            </nav>
+        </div><!-- top-bar -->
+
+        <div class="bg-jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="row">
+                            <div class="col-lg-12 col-bullits">
+                                <h1 class="service-name text-uppercase"><span class="letter-o">O</span><span class="letter-k">k</span><span class="single-quote">'</span><span class="doc">Doctor</span></h1>
+                                <small>Персональный подбор врача в лучших платных клиниках Казани.</small>
+                                <ul class="bullits">
+                                    <li>
+                                        <p><strong><i class="fa fa-check-square-o fa-2" aria-hidden="true"></i> Выберем для Вас нужного врача с учетом Вашего возраста, симптомов, прежнего лечения.</strong></p>
+                                    </li>
+                                    <li>
+                                        <p><strong><i class="fa fa-check-square-o fa-2" aria-hidden="true"></i> Запишем на прием в удобное время и место.</strong></p>
+                                    </li>
+                                    <li>
+                                        <p><strong><i class="fa fa-check-square-o fa-2" aria-hidden="true"></i> Напомним о приеме и назначениях.</strong></p>
+                                    </li>
+                                    <li>
+                                        <p><strong><i class="fa fa-check-square-o fa-2" aria-hidden="true"></i> Будем на связи с Вами до выздоровления.</strong></p>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="col-lg-8 col-md-7 col-sm-12">
-                                <form action="" method="POST">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <input class="form-control input-phone-first" type="phone" name="" placeholder="Введите Ваш номер телефона">
-                                            <input class="btn btn-default text-uppercase btn-jumbotron-first" type="submit" value="Записаться">
+                            <div class="col-lg-12 col-bullits">
+                                <!--<input class="btn text-uppercase btn-know-more" type="submit" value="Узнать больше">-->
+                                <a class="btn text-uppercase btn-know-more" href="#container-how">Узнать больше</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="well jumbotron-well">
+                            <h5>Уже работает с картами:</h5>
+                            <div class="row text-center">
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-left">
+                                    <div class="card card-one"></div>
+                                    <div class="card card-two"></div>
+                                    <div class="card card-three"></div>
+                                </div>
+                                <div class="col-lg-8 col-md-7 col-sm-12">
+                                    <form action="" method="POST">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <input class="form-control input-phone-first" type="phone" name="" placeholder="Введите Ваш номер телефона">
+                                                <input class="btn btn-default text-uppercase btn-jumbotron-first" type="submit" value="Записаться">
+                                            </div>
                                         </div>
-                                    </div>
-                                </form>
-                                <p class="form-text-title">Еще нет карты?</p>
-                                <p class="form-text form-text-first">Приобретите карту всего за 300 рублей и получите возможность быстрой записи в любую платную клинику г. Казани буквально за несколько минут!</p>
-                                <p class="form-text form-text-second">Один звонок - и специалисты проконсультируют Вас по любым вопросам, связанным с медицинским обслуживанием и подберут удобное время для посещения нужного врача.</p>
-                                <input class="btn btn-default text-uppercase btn-jumbotron-buy" type="submit" value="Купить карту">
+                                    </form>
+                                    <p class="form-text-title">Еще нет карты?</p>
+                                    <p class="form-text form-text-first">Приобретите карту всего за 300 рублей и получите возможность быстрой записи в любую платную клинику г. Казани буквально за несколько минут!</p>
+                                    <p class="form-text form-text-second">Один звонок - и специалисты проконсультируют Вас по любым вопросам, связанным с медицинским обслуживанием и подберут удобное время для посещения нужного врача.</p>
+                                    <input data-toggle="modal" data-target="#myModal" class="btn btn-default text-uppercase btn-jumbotron-buy" type="submit" value="Купить карту">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div><!-- jumbotron -->
+        </div><!-- jumbotron -->
 
-    <div class="container">
-        <div class="row text-center">
-            <form class="form-inline form">
-                <div class="form-group">
-                    <input name="" type="tel" class="form-control input-phone-second" id="" placeholder="Ваш номер телефона">
-                </div>
-                <button type="submit" class="btn btn-default btn-sign-in-second text-uppercase">Записаться</button>
-            </form>
-        </div>
-    </div><!-- input-sign-in-phone -->
-
-    <div class="container">
-        <div class="row text-center">
-            <h4>Не нашли нужного врача?</h4>
-            <p>Подберем лучшего специалиста в любой платной клинике города Казань!</p>
-        </div>
-    </div><!-- tabs-steps -->
-
-    <div class="container">
-        <div class="row">
-
-        </div>
-    </div><!-- tabs-choose-department -->
-
-    <div class="container">
-        <div class="row">
-
-        </div>
-    </div><!-- parallax -->
-
-
-    <div class="container container-border">
-        <div class="row text-center">
-            <div class="col-lg-12">
-                <form action="" method="" class="form-horizontal">
-                    <div class="form-group">
-                        <label for="" class="col-lg-2 col-md-4 col-lg-offset-2 control-label">Выберите врача:</label>
-                        <div class="col-lg-6 col-md-8">
-                            <select class="form-control">
-                                <option>Выберите специалиста</option>
-                                <option>Уролог</option>
-                                <option>ЛОР</option>
-                                <option>Невролог</option>
-                                <option>Педиатр</option>
-                                <option>Хирург</option>
-                            </select>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-default btn-select-submit text-uppercase">Записаться</button>
-                </form>
-            </div>
-        </div>
-    </div><!-- input-select-doctor -->
-
-    <div class="container">
-        <div class="row">
-            <h2 class="text-center">Почему мы?</h2>
-            <div class="col-lg-3 col-md-3">
-                <div class="thumbnail caption text-center">
-                    <div class="why-img why-img-clock"></div>
-                    <div class="caption">
-                        <h3>Экономим время</h3>
-                        <p>Вам не нужно обзванивать клиники и узнавать расписание</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3">
-                <div class="thumbnail caption text-center">
-                    <div class="why-img why-img-sofa"></div>
-                    <div class="caption">
-                        <h3>Не отвлекаем</h3>
-                        <p>Несколько минут на запись к врачу - и вы снова возвращаетесь к делам</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3">
-                <div class="thumbnail caption text-center">
-                    <div class="why-img why-img-graph"></div>
-                    <div class="caption">
-                        <h3>Лучшие врачи</h3>
-                        <p>Мы сотрудничаем только с лучшими врачами в городе Казань</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3">
-                <div class="thumbnail caption text-center">
-                    <div class="why-img why-img-coin"></div>
-                    <div class="caption">
-                        <h3>Выгодные цены</h3>
-                        <p>Всегда идем навстречу клиенту - цены на прием доступны каждому</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><!-- why-we -->
-
-    <div class="container container-how container-border" id="container-how">
-        <div class="row">
-            <div class="col-lg-3 col-md-3">
-                <div class="character-woman"></div>
-            </div>
-            <div class="col-lg-9 col-md-9">
-                <p class="how-title-upper">Еще немного о нас</p>
-                <p class="how-title-main">Как работает сервис?</p>
-                <p class="how-text">Мы разработали уникальный сервис записи к лучшим платным врачам города - вы можете выбрать специалиста, время приема, записаться в несколько кликов - всё, что останется, только придти в назначенное время.
-                    Если в списке на онлайн запись вы не нашли нужного врача (к сожалению, пока такое бывает), наши специалисты свяжутся с Вами и подберут ЛЮБОГО врача по телефону.</p>
-                <a class="how-link" href="#">Заказать звонок специалиста</a>
-            </div>
-        </div>
-    </div><!-- how -->
-
-
-    <div class="container container-any-questions">
-        <div class="row">
-            <h2>Остались вопросы? Наши специалисты помогут записаться к врачу!</h2>
-        </div>
-    </div><!-- any-questions -->
-
-    <div class="bg-trigger-button">
         <div class="container">
             <div class="row text-center">
-                <!--<input class="btn btn-default" type="submit" value="Звонок специалиста">-->
-                <a class="trigger-btn" href="#">Звонок специалиста</a>
+                <form class="form-inline form">
+                    <div class="form-group">
+                        <input name="" type="tel" class="form-control input-phone-second" id="" placeholder="Ваш номер телефона">
+                    </div>
+                    <button type="submit" class="btn btn-default btn-sign-in-second text-uppercase">Записаться</button>
+                </form>
             </div>
-        </div>
-    </div><!-- trigger-btn -->
+        </div><!-- input-sign-in-phone -->
 
-    <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
-                    <p class="copyright">&copy; 2016 OK'DOCTOR</p>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="nav-footer">
-                        <li>
-                            <a href="#">Главная</a>
+                <div class="col-lg-12 col-tabs">
+                    <ul class="nav nav-pills ">
+                        <li class="active">
+                            <a href="#tab_default_1" data-toggle="tab">Детское</a>
                         </li>
                         <li>
-                            <a href="#">Запись</a>
-                        </li>
-                        <li>
-                            <a href="#">Врачи</a>
-                        </li>
-                        <li>
-                            <a href="#">О нас</a>
+                            <a href="#tab_default_2" data-toggle="tab">Взрослое</a>
                         </li>
                     </ul>
-                </div>
-                <div class="col-lg-2">
-                    <a class="link-to-top" href="">Наверх</a>
-                    <i class="fa fa-long-arrow-up fa-1" aria-hidden="true"></i>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab_default_1">
+                            <form action="#" id="myForm" role="form" data-toggle="validator" method="post" accept-charset="utf-8">
+                                <!-- SmartWizard html -->
+                                <div id="smartwizard">
+                                    <ul>
+                                        <li><a href="#step-1"><small>Специальность врача</small></a></li>
+                                        <li><a href="#step-2"><small>Имя</small></a></li>
+                                        <li><a href="#step-3"><small>Адрес</small></a></li>
+                                        <li><a href="#step-4"><small>Адрес 2</small></a></li>
+                                        <li><a href="#step-5"><small>Адрес 3</small></a></li>
+                                        <li><a href="#step-6"><small>Адрес 4</small></a></li>
+                                        <li><a href="#step-7"><small>Terms and Conditions</small></a></li>
+                                    </ul>
+                                    <div>
+                                        <div id="step-1">
+                                            <h2>Выберите врача</h2>
+                                            <div id="form-step-0" role="form" data-toggle="validator">
+                                                <div class="form-group">
+                                                    <select class="form-control">
+                                                        <option>Выберите специалиста</option>
+                                                        <option>Терапевт</option>
+                                                        <option>Хирург</option>
+                                                        <option>Стоматолог</option>
+                                                        <option>Аллерголог-Иммунолог</option>
+                                                        <option>Гастроэнтеролог</option>
+                                                        <option>Гастроэнтеролог</option>
+                                                        <option>Гинеколог</option>
+                                                        <option>Дерматолог</option>
+                                                        <option>Кардиолог</option>
+                                                        <option>ЛОР (отоларинголог)</option>
+                                                        <option>Невролог</option>
+                                                        <option>Окулист</option>
+                                                        <option>Онколог</option>
+                                                        <option>Проктолог</option>
+                                                        <option>Пульмонолог</option>
+                                                        <option>Ревматолог</option>
+                                                        <option>Травматолог</option>
+                                                        <option>Уролог</option>
+                                                        <option>Эндокринолог</option>
+                                                    </select>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="step-2">
+                                            <h2>Не нашли нужного врача в Казани?</h2>
+                                            <div id="form-step-1" role="form" data-toggle="validator">
+                                                <div class="form-group">
+                                                    <input type="tel" class="form-control" id="phone" placeholder="Телефон">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="step-3">
+                                            <h2>Ваш адрес</h2>
+                                            <div id="form-step-2" role="form" data-toggle="validator">
+                                                <div class="form-group">
+                                                    <label for="address">Адрес</label>
+                                                    <textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="step-4">
+                                            <h2>test</h2>
+                                            <div id="form-step-3" role="form" data-toggle="validator">
+                                                <div class="form-group">
+                                                    <label for="address">test</label>
+                                                    <textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="step-5">
+                                            <h2>test</h2>
+                                            <div id="form-step-4" role="form" data-toggle="validator">
+                                                <div class="form-group">
+                                                    <label for="address">test</label>
+                                                    <textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="step-6">
+                                            <h2>test</h2>
+                                            <div id="form-step-5" role="form" data-toggle="validator">
+                                                <div class="form-group">
+                                                    <label for="address">test</label>
+                                                    <textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="step-7" class="">
+                                            <h2>Последний шаг</h2>
+                                            <p>Данные, введенные мною, актуальны и соответсвуют действительности.</p>
+                                            <div id="form-step-6" role="form" data-toggle="validator">
+                                                <div class="form-group">
+                                                    <label for="terms">Да</label>
+                                                    <input type="checkbox" id="terms" data-error="Please accept the Terms and Conditions" required>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="tab_default_2">
+                            <form action="#" id="myForm2" role="form" data-toggle="validator" method="post" accept-charset="utf-8">
+                                <!-- SmartWizard html -->
+                                <div id="smartwizard2">
+                                    <ul>
+                                        <li><a href="#step-1"><small>Специальность врача (это взрослое отделение)</small></a></li>
+                                        <li><a href="#step-2"><small>Имя (это взрослое отделение)</small></a></li>
+                                        <li><a href="#step-3"><small>Адрес (это взрослое отделение)</small></a></li>
+
+                                        <li><a href="#step-4"><small>Адрес 2</small></a></li>
+                                        <li><a href="#step-5"><small>Адрес 3</small></a></li>
+                                        <li><a href="#step-6"><small>Адрес 4</small></a></li>
+
+                                        <li><a href="#step-7"><small>Terms and Conditions</small></a></li>
+                                    </ul>
+                                    <div>
+                                        <div id="step-1">
+                                            <h2>Выберите врача</h2>
+                                            <div id="form-step-0" role="form" data-toggle="validator">
+                                                <div class="form-group">
+                                                    <!--<label for="" class="col-lg-2 col-md-4 col-lg-offset-2 control-label">Выберите врача:</label>-->
+                                                    <select class="form-control">
+                                                        <option>Выберите специалиста</option>
+                                                        <option>Терапевт</option>
+                                                        <option>Хирург</option>
+                                                        <option>Стоматолог</option>
+                                                        <option>Аллерголог-Иммунолог</option>
+                                                        <option>Гастроэнтеролог</option>
+                                                        <option>Гастроэнтеролог</option>
+                                                        <option>Гинеколог</option>
+                                                        <option>Дерматолог</option>
+                                                        <option>Кардиолог</option>
+                                                        <option>ЛОР (отоларинголог)</option>
+                                                        <option>Невролог</option>
+                                                        <option>Окулист</option>
+                                                        <option>Онколог</option>
+                                                        <option>Проктолог</option>
+                                                        <option>Пульмонолог</option>
+                                                        <option>Ревматолог</option>
+                                                        <option>Травматолог</option>
+                                                        <option>Уролог</option>
+                                                        <option>Эндокринолог</option>
+                                                    </select>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="step-2">
+                                            <h2>Не нашли нужного врача в Казани?</h2>
+                                            <div id="form-step-1" role="form" data-toggle="validator">
+                                                <div class="form-group">
+                                                    <input type="tel" class="form-control" id="phone" placeholder="Телефон">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="step-3">
+                                            <h2>Ваш адрес</h2>
+                                            <div id="form-step-2" role="form" data-toggle="validator">
+                                                <div class="form-group">
+                                                    <label for="address">Адрес</label>
+                                                    <textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="step-4">
+                                            <h2>test</h2>
+                                            <div id="form-step-3" role="form" data-toggle="validator">
+                                                <div class="form-group">
+                                                    <label for="address">test</label>
+                                                    <textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="step-5">
+                                            <h2>test</h2>
+                                            <div id="form-step-4" role="form" data-toggle="validator">
+                                                <div class="form-group">
+                                                    <label for="address">test</label>
+                                                    <textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="step-6">
+                                            <h2>test</h2>
+                                            <div id="form-step-5" role="form" data-toggle="validator">
+                                                <div class="form-group">
+                                                    <label for="address">test</label>
+                                                    <textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="step-7" class="">
+                                            <h2>Последний шаг</h2>
+                                            <p>Данные, введенные мною, актуальны и соответсвуют действительности.</p>
+                                            <div id="form-step-6" role="form" data-toggle="validator">
+                                                <div class="form-group">
+                                                    <label for="terms">Да</label>
+                                                    <input type="checkbox" id="terms" data-error="Please accept the Terms and Conditions" required>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
 
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
+        <div class="parallax">
+            <div class="text-center">
+                <h4>Не нашли нужного врача?</h4>
+                <p>Подберем лучшего специалиста в любой платной клинике города Казань!</p>
+            </div>
+        </div>
+        <!-- parallax -->
+
+        <div class="container container-border">
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <form action="" method="" class="form-horizontal">
+                        <div class="form-group">
+                            <label for="" class="col-lg-2 col-md-4 col-lg-offset-2 control-label">Выберите врача:</label>
+                            <div class="col-lg-6 col-md-8">
+                                <select class="form-control">
+                                    <option>Выберите специалиста</option>
+                                    <option>Терапевт</option>
+                                    <option>Хирург</option>
+                                    <option>Стоматолог</option>
+                                    <option>Аллерголог-Иммунолог</option>
+                                    <option>Гастроэнтеролог</option>
+                                    <option>Гастроэнтеролог</option>
+                                    <option>Гинеколог</option>
+                                    <option>Дерматолог</option>
+                                    <option>Кардиолог</option>
+                                    <option>ЛОР (отоларинголог)</option>
+                                    <option>Невролог</option>
+                                    <option>Окулист</option>
+                                    <option>Онколог</option>
+                                    <option>Проктолог</option>
+                                    <option>Пульмонолог</option>
+                                    <option>Ревматолог</option>
+                                    <option>Травматолог</option>
+                                    <option>Уролог</option>
+                                    <option>Эндокринолог</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button data-toggle="modal" data-target="#myModal-sign-in-first" type="submit" class="btn btn-default btn-select-submit text-uppercase">Записаться</button>
+                    </form>
+                </div>
+            </div>
+        </div><!-- input-select-doctor -->
+
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center">Почему мы?</h2>
+                <div class="col-lg-3 col-md-3">
+                    <div class="thumbnail caption text-center">
+                        <div class="why-img why-img-clock"></div>
+                        <div class="caption">
+                            <h3>Экономим время</h3>
+                            <p>Вам не нужно обзванивать клиники и узнавать расписание</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="thumbnail caption text-center">
+                        <div class="why-img why-img-sofa"></div>
+                        <div class="caption">
+                            <h3>Не отвлекаем</h3>
+                            <p>Несколько минут на запись к врачу - и вы снова возвращаетесь к делам</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="thumbnail caption text-center">
+                        <div class="why-img why-img-graph"></div>
+                        <div class="caption">
+                            <h3>Лучшие врачи</h3>
+                            <p>Мы сотрудничаем только с лучшими врачами в городе Казань</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="thumbnail caption text-center">
+                        <div class="why-img why-img-coin"></div>
+                        <div class="caption">
+                            <h3>Выгодные цены</h3>
+                            <p>Всегда идем навстречу клиенту - цены на прием доступны каждому</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- why-we -->
+
+        <div class="container container-how container-border" id="container-how">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="character-woman"></div>
+                </div>
+                <div class="col-lg-9 col-md-9">
+                    <p class="how-title-upper">Еще немного о нас</p>
+                    <p class="how-title-main">Как работает сервис?</p>
+                    <!--<p class="how-text">Мы разработали уникальный сервис записи к лучшим платным врачам города - вы можете выбрать специалиста, время приема, записаться в несколько кликов - всё, что останется, только придти в назначенное время.-->
+                        <!--Если в списке на онлайн запись вы не нашли нужного врача (к сожалению, пока такое бывает), наши специалисты свяжутся с Вами и подберут ЛЮБОГО врача по телефону.</p>-->
+                    <p class="how-text">Сервис персонального подбора врача и сопровождения пациентов "OK'ДОКТОР" помогает жителям Казани попасть к самым хорошим врачам
+                        коммерческих клиник города, записаться на прием, пройти нужное обследование. В штате сервиса работают квалифицированные врачи. Чтобы поолучить подробную
+                    консультацию по подбору врача, который нужен именно Вам с учетом того, сколько Вам лет, какое лечение Вы получали ранее, какие у Вас симптомы, и записаться
+                    к нужному врачу, достаточно одного звонка на горячую линию сервиса по телефону 8 800 505 63 75. Также можно оставить заявку на подбор врача
+                        <a href="#">здесь</a>.</p>
+                    <p class="how-text">После приема у врача наш специалист обязательно свяжется с Вами, уточнит, довольны ли Вы результиатами приема, какие сделаны назначения, и запишет на дальнейшее
+                    лечение и обследование. Мы будем рядом до Вашего выздоровления или заметного улучшения здоровья. Даже если потребуется санаторно-курортное лечение, лечение в другом
+                    городе России или за рубежом, "OK'ДОКТОР" поможет организовать поездку и лечение.</p>
+                    <p class="how-text">Пользуйтесь сервисом "OK'ДОКТОР" и будьте уверены в состоянии своего здоровья!</p>
+                    <a data-toggle="modal" data-target="#myModal-sign-in-first" class="how-link" href="#">Заказать звонок специалиста</a>
+                </div>
+            </div>
+        </div><!-- how -->
+
+
+        <div class="container container-any-questions">
+            <div class="row">
+                <h2>Остались вопросы? Наши специалисты помогут записаться к врачу!</h2>
+            </div>
+        </div><!-- any-questions -->
+
+        <div class="bg-trigger-button">
+            <div class="container">
+                <div class="row text-center">
+                    <a data-toggle="modal" data-target="#myModal-sign-in-first" class="trigger-btn" href="#">Звонок специалиста</a>
+                </div>
+            </div>
+        </div><!-- trigger-btn -->
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-copyright">
+                        <p class="copyright">&copy; 2016 OK'DOCTOR. <a class="agreement" href="agreement.html" target="_blank">Пользовательское соглашение</a></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-footer-nav">
+                        <ul class="nav-footer">
+                            <li>
+                                <a href="#">Главная</a>
+                            </li>
+                            <li>
+                                <a href="#">Запись</a>
+                            </li>
+                            <li>
+                                <a href="#">Врачи</a>
+                            </li>
+                            <li>
+                                <a href="#">О нас</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-link-to-top" id="back-top">
+                        <a class="link-to-top" href="#top">Наверх</a>
+                        <i class="fa fa-long-arrow-up fa-1" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Оформление карты</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="last-name">Фамилия</label>
+                                <input type="text" class="form-control" id="last-name" placeholder="Фамилия">
+                            </div>
+                            <div class="form-group">
+                                <label for="first-name">Имя</label>
+                                <input type="text" class="form-control" id="first-name" placeholder="Имя">
+                            </div>
+                            <div class="form-group">
+                                <label for="second-name">Отчество</label>
+                                <input type="text" class="form-control" id="second-name" placeholder="Отчество">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputDate">Дата рождения</label>
+                                <input type="date" id="inputDate" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Телефон">
+                            </div>
+                            <div class="checkbox">
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> WhatsApp
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> SMS
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> E-mail
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Viber
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Звонок
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> Я согласен и ознакомлен с
+                                    <a href="agreement.html" target="_blank">условиями пользовательского соглашения</a>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-success">Купить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="myModal-sign-in-first" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Запись к врачу за 5 минут!</h4>
+                        <small>Введите ваши данные</small>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="last-name" placeholder="Ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" id="phone" placeholder="Ваш телефон">
+                            </div>
+                            <button type="submit" class="btn btn-info">Записаться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+
+        <!-- Include SmartWizard JavaScript source -->
+        <script type="text/javascript" src="app/js/jquery.smartWizard.js"></script>
+        <script type="text/javascript" src="app/js/smartWizard.js"></script>
+        <script type="text/javascript" src="app/js/link-to-top.js"></script>
+    </body>
 </html>

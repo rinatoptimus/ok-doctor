@@ -110,9 +110,14 @@ small {
     flex-direction: row;
   }
 }
-form {
-  margin-top: -16px;
+.row {
+  div.col-lg-8 {
+    form {
+      margin-top: -16px;
+    }
+  }
 }
+
 .input-phone-first {
   width: 79%;
   height: 37px;
@@ -125,7 +130,7 @@ form {
     width: 64%;
   }
 }
-.btn-default {
+.btn-jumbotron-first {
   padding: 15px 25px;
   background-color: $blue-light;
   border-radius: 25px;
