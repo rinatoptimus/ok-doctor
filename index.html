@@ -6,6 +6,7 @@
     <title>OK Doctor</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="app/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
@@ -72,7 +73,7 @@
                             </div>
                             <div class="col-lg-12 col-bullits">
                                 <!--<input class="btn text-uppercase btn-know-more" type="submit" value="Узнать больше">-->
-                                <a class="btn text-uppercase btn-know-more" href="#container-how">Узнать больше</a>
+                                <a class="btn text-uppercase btn-know-more" href="#element-to-animate5">Узнать больше</a>
                             </div>
                         </div>
                     </div>
@@ -117,7 +118,7 @@
             </div>
         </div><!-- input-sign-in-phone -->
 
-        <div class="container">
+        <div class="container animated" id="element-to-animate">
             <div class="row">
                 <div class="col-lg-12 col-tabs">
                     <ul class="nav nav-pills ">
@@ -353,7 +354,7 @@
             </div>
         </div>
 
-        <div class="parallax">
+        <div class="parallax animated" id="element-to-animate2">
             <div class="text-center">
                 <h4>Не нашли нужного врача?</h4>
                 <p>Подберем лучшего специалиста в любой платной клинике города Казань!</p>
@@ -361,7 +362,7 @@
         </div>
         <!-- parallax -->
 
-        <div class="container container-border">
+        <div class="container container-border animated" id="element-to-animate3">
             <div class="row text-center">
                 <div class="col-lg-12">
                     <form action="" method="" class="form-horizontal">
@@ -398,7 +399,7 @@
             </div>
         </div><!-- input-select-doctor -->
 
-        <div class="container">
+        <div class="container animated" id="element-to-animate4">
             <div class="row">
                 <h2 class="text-center">Почему мы?</h2>
                 <div class="col-lg-3 col-md-3">
@@ -440,7 +441,7 @@
             </div>
         </div><!-- why-we -->
 
-        <div class="container container-how container-border" id="container-how">
+        <div class="container container-how container-border animated" id="element-to-animate5">
             <div class="row">
                 <div class="col-lg-3 col-md-3">
                     <div class="character-woman"></div>
@@ -465,7 +466,7 @@
         </div><!-- how -->
 
 
-        <div class="container container-any-questions">
+        <div class="container container-any-questions animated" id="element-to-animate6">
             <div class="row">
                 <h2>Остались вопросы? Наши специалисты помогут записаться к врачу!</h2>
             </div>
@@ -603,5 +604,9 @@
         <script type="text/javascript" src="app/js/jquery.smartWizard.js"></script>
         <script type="text/javascript" src="app/js/smartWizard.js"></script>
         <script type="text/javascript" src="app/js/link-to-top.js"></script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="app/js/scroll-animation.js"></script>
     </body>
 </html>
