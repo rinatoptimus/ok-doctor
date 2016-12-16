@@ -81,12 +81,14 @@
                         <div class="well jumbotron-well">
                             <h5>Уже работает с картами:</h5>
                             <div class="row text-center">
-                                <div class="col-lg-4 col-md-4 col-sm-12 col-left">
+                                <!--<div class="col-lg-4 col-md-4 col-sm-12 col-left">-->
+                                <div class="col-lg-4 col-md-12 col-sm-12 col-left">
                                     <div class="card card-one"></div>
                                     <div class="card card-two"></div>
                                     <div class="card card-three"></div>
                                 </div>
-                                <div class="col-lg-8 col-md-7 col-sm-12">
+                                <!--<div class="col-lg-8 col-md-7 col-sm-12">-->
+                                <div class="col-lg-8 col-md-12 col-sm-12">
                                     <form action="" method="POST">
                                         <div class="row">
                                             <div class="col-lg-12">
@@ -118,241 +120,238 @@
             </div>
         </div><!-- input-sign-in-phone -->
 
-        <div class="container animated" id="element-to-animate">
-            <div class="row">
-                <div class="col-lg-12 col-tabs">
-                    <ul class="nav nav-pills nav-pills-tabs">
-                        <li class="active">
-                            <a href="#tab_default_1" data-toggle="tab">Детское</a>
-                        </li>
-                        <li>
-                            <a href="#tab_default_2" data-toggle="tab">Взрослое</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="tab_default_1">
-                            <form action="#" id="myForm" role="form" data-toggle="validator" method="post" accept-charset="utf-8">
-                                <!-- SmartWizard html -->
-                                <div id="smartwizard">
-                                    <ul>
-                                        <li><a href="#step-1"><small>Специальность врача</small></a></li>
-                                        <li><a href="#step-2"><small>Имя</small></a></li>
-                                        <li><a href="#step-3"><small>Адрес</small></a></li>
-                                        <li><a href="#step-4"><small>Адрес 2</small></a></li>
-                                        <li><a href="#step-5"><small>Адрес 3</small></a></li>
-                                        <li><a href="#step-6"><small>Адрес 4</small></a></li>
-                                        <li><a href="#step-7"><small>Terms and Conditions</small></a></li>
-                                    </ul>
-                                    <div>
-                                        <div id="step-1">
-                                            <h2>Выберите врача</h2>
-                                            <div id="form-step-0" role="form" data-toggle="validator">
-                                                <div class="form-group">
-                                                    <select class="form-control">
-                                                        <option>Выберите специалиста</option>
-                                                        <option>Терапевт</option>
-                                                        <option>Хирург</option>
-                                                        <option>Стоматолог</option>
-                                                        <option>Аллерголог-Иммунолог</option>
-                                                        <option>Гастроэнтеролог</option>
-                                                        <option>Гастроэнтеролог</option>
-                                                        <option>Гинеколог</option>
-                                                        <option>Дерматолог</option>
-                                                        <option>Кардиолог</option>
-                                                        <option>ЛОР (отоларинголог)</option>
-                                                        <option>Невролог</option>
-                                                        <option>Окулист</option>
-                                                        <option>Онколог</option>
-                                                        <option>Проктолог</option>
-                                                        <option>Пульмонолог</option>
-                                                        <option>Ревматолог</option>
-                                                        <option>Травматолог</option>
-                                                        <option>Уролог</option>
-                                                        <option>Эндокринолог</option>
-                                                    </select>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="step-2">
-                                            <h2>Не нашли нужного врача в Казани?</h2>
-                                            <div id="form-step-1" role="form" data-toggle="validator">
-                                                <div class="form-group">
-                                                    <input type="tel" class="form-control" id="phone" placeholder="Телефон">
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="step-3">
-                                            <h2>Ваш адрес</h2>
-                                            <div id="form-step-2" role="form" data-toggle="validator">
-                                                <div class="form-group">
-                                                    <label for="address">Адрес</label>
-                                                    <textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="step-4">
-                                            <h2>test</h2>
-                                            <div id="form-step-3" role="form" data-toggle="validator">
-                                                <div class="form-group">
-                                                    <label for="address">test</label>
-                                                    <textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="step-5">
-                                            <h2>test</h2>
-                                            <div id="form-step-4" role="form" data-toggle="validator">
-                                                <div class="form-group">
-                                                    <label for="address">test</label>
-                                                    <textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="step-6">
-                                            <h2>test</h2>
-                                            <div id="form-step-5" role="form" data-toggle="validator">
-                                                <div class="form-group">
-                                                    <label for="address">test</label>
-                                                    <textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="step-7" class="">
-                                            <h2>Последний шаг</h2>
-                                            <p>Данные, введенные мною, актуальны и соответсвуют действительности.</p>
-                                            <div id="form-step-6" role="form" data-toggle="validator">
-                                                <div class="form-group">
-                                                    <label for="terms">Да</label>
-                                                    <input type="checkbox" id="terms" data-error="Please accept the Terms and Conditions" required>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="tab-pane" id="tab_default_2">
-                            <form action="#" id="myForm2" role="form" data-toggle="validator" method="post" accept-charset="utf-8">
-                                <!-- SmartWizard html -->
-                                <div id="smartwizard2">
-                                    <ul>
-                                        <li><a href="#step-1"><small>Специальность врача (это взрослое отделение)</small></a></li>
-                                        <li><a href="#step-2"><small>Имя (это взрослое отделение)</small></a></li>
-                                        <li><a href="#step-3"><small>Адрес (это взрослое отделение)</small></a></li>
+        <!--<div class="container animated" id="element-to-animate">-->
+        <!--<div class="row">-->
+        <!--<div class="col-lg-12 col-tabs">-->
+        <!--<ul class="nav nav-pills nav-pills-tabs">-->
+        <!--<li class="active">-->
+        <!--<a href="#tab_default_1" data-toggle="tab">Детское</a>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<a href="#tab_default_2" data-toggle="tab">Взрослое</a>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--<div class="tab-content">-->
+        <!--<div class="tab-pane active" id="tab_default_1">-->
+        <!--<form action="#" id="myForm" role="form" data-toggle="validator" method="post" accept-charset="utf-8">-->
+        <!--<div id="smartwizard">-->
+        <!--<ul>-->
+        <!--<li><a href="#step-1"><small>Специальность врача</small></a></li>-->
+        <!--<li><a href="#step-2"><small>Имя</small></a></li>-->
+        <!--<li><a href="#step-3"><small>Адрес</small></a></li>-->
+        <!--<li><a href="#step-4"><small>Адрес 2</small></a></li>-->
+        <!--<li><a href="#step-5"><small>Адрес 3</small></a></li>-->
+        <!--<li><a href="#step-6"><small>Адрес 4</small></a></li>-->
+        <!--<li><a href="#step-7"><small>Terms and Conditions</small></a></li>-->
+        <!--</ul>-->
+        <!--<div>-->
+        <!--<div id="step-1">-->
+        <!--<h2>Выберите врача</h2>-->
+        <!--<div id="form-step-0" role="form" data-toggle="validator">-->
+        <!--<div class="form-group">-->
+        <!--<select class="form-control">-->
+        <!--<option>Выберите специалиста</option>-->
+        <!--<option>Терапевт</option>-->
+        <!--<option>Хирург</option>-->
+        <!--<option>Стоматолог</option>-->
+        <!--<option>Аллерголог-Иммунолог</option>-->
+        <!--<option>Гастроэнтеролог</option>-->
+        <!--<option>Гастроэнтеролог</option>-->
+        <!--<option>Гинеколог</option>-->
+        <!--<option>Дерматолог</option>-->
+        <!--<option>Кардиолог</option>-->
+        <!--<option>ЛОР (отоларинголог)</option>-->
+        <!--<option>Невролог</option>-->
+        <!--<option>Окулист</option>-->
+        <!--<option>Онколог</option>-->
+        <!--<option>Проктолог</option>-->
+        <!--<option>Пульмонолог</option>-->
+        <!--<option>Ревматолог</option>-->
+        <!--<option>Травматолог</option>-->
+        <!--<option>Уролог</option>-->
+        <!--<option>Эндокринолог</option>-->
+        <!--</select>-->
+        <!--<div class="help-block with-errors"></div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div id="step-2">-->
+        <!--<h2>Не нашли нужного врача в Казани?</h2>-->
+        <!--<div id="form-step-1" role="form" data-toggle="validator">-->
+        <!--<div class="form-group">-->
+        <!--<input type="tel" class="form-control" id="phone" placeholder="Телефон">-->
+        <!--<div class="help-block with-errors"></div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div id="step-3">-->
+        <!--<h2>Ваш адрес</h2>-->
+        <!--<div id="form-step-2" role="form" data-toggle="validator">-->
+        <!--<div class="form-group">-->
+        <!--<label for="address">Адрес</label>-->
+        <!--<textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>-->
+        <!--<div class="help-block with-errors"></div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div id="step-4">-->
+        <!--<h2>test</h2>-->
+        <!--<div id="form-step-3" role="form" data-toggle="validator">-->
+        <!--<div class="form-group">-->
+        <!--<label for="address">test</label>-->
+        <!--<textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>-->
+        <!--<div class="help-block with-errors"></div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div id="step-5">-->
+        <!--<h2>test</h2>-->
+        <!--<div id="form-step-4" role="form" data-toggle="validator">-->
+        <!--<div class="form-group">-->
+        <!--<label for="address">test</label>-->
+        <!--<textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>-->
+        <!--<div class="help-block with-errors"></div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div id="step-6">-->
+        <!--<h2>test</h2>-->
+        <!--<div id="form-step-5" role="form" data-toggle="validator">-->
+        <!--<div class="form-group">-->
+        <!--<label for="address">test</label>-->
+        <!--<textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>-->
+        <!--<div class="help-block with-errors"></div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div id="step-7" class="">-->
+        <!--<h2>Последний шаг</h2>-->
+        <!--<p>Данные, введенные мною, актуальны и соответсвуют действительности.</p>-->
+        <!--<div id="form-step-6" role="form" data-toggle="validator">-->
+        <!--<div class="form-group">-->
+        <!--<label for="terms">Да</label>-->
+        <!--<input type="checkbox" id="terms" data-error="Please accept the Terms and Conditions" required>-->
+        <!--<div class="help-block with-errors"></div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</form>-->
+        <!--</div>-->
+        <!--<div class="tab-pane" id="tab_default_2">-->
+        <!--<form action="#" id="myForm2" role="form" data-toggle="validator" method="post" accept-charset="utf-8">-->
+        <!--<div id="smartwizard2">-->
+        <!--<ul>-->
+        <!--<li><a href="#step-1"><small>Специальность врача (это взрослое отделение)</small></a></li>-->
+        <!--<li><a href="#step-2"><small>Имя (это взрослое отделение)</small></a></li>-->
+        <!--<li><a href="#step-3"><small>Адрес (это взрослое отделение)</small></a></li>-->
 
-                                        <li><a href="#step-4"><small>Адрес 2</small></a></li>
-                                        <li><a href="#step-5"><small>Адрес 3</small></a></li>
-                                        <li><a href="#step-6"><small>Адрес 4</small></a></li>
+        <!--<li><a href="#step-4"><small>Адрес 2</small></a></li>-->
+        <!--<li><a href="#step-5"><small>Адрес 3</small></a></li>-->
+        <!--<li><a href="#step-6"><small>Адрес 4</small></a></li>-->
 
-                                        <li><a href="#step-7"><small>Terms and Conditions</small></a></li>
-                                    </ul>
-                                    <div>
-                                        <div id="step-1">
-                                            <h2>Выберите врача</h2>
-                                            <div id="form-step-0" role="form" data-toggle="validator">
-                                                <div class="form-group">
-                                                    <!--<label for="" class="col-lg-2 col-md-4 col-lg-offset-2 control-label">Выберите врача:</label>-->
-                                                    <select class="form-control">
-                                                        <option>Выберите специалиста</option>
-                                                        <option>Терапевт</option>
-                                                        <option>Хирург</option>
-                                                        <option>Стоматолог</option>
-                                                        <option>Аллерголог-Иммунолог</option>
-                                                        <option>Гастроэнтеролог</option>
-                                                        <option>Гастроэнтеролог</option>
-                                                        <option>Гинеколог</option>
-                                                        <option>Дерматолог</option>
-                                                        <option>Кардиолог</option>
-                                                        <option>ЛОР (отоларинголог)</option>
-                                                        <option>Невролог</option>
-                                                        <option>Окулист</option>
-                                                        <option>Онколог</option>
-                                                        <option>Проктолог</option>
-                                                        <option>Пульмонолог</option>
-                                                        <option>Ревматолог</option>
-                                                        <option>Травматолог</option>
-                                                        <option>Уролог</option>
-                                                        <option>Эндокринолог</option>
-                                                    </select>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="step-2">
-                                            <h2>Не нашли нужного врача в Казани?</h2>
-                                            <div id="form-step-1" role="form" data-toggle="validator">
-                                                <div class="form-group">
-                                                    <input type="tel" class="form-control" id="phone" placeholder="Телефон">
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="step-3">
-                                            <h2>Ваш адрес</h2>
-                                            <div id="form-step-2" role="form" data-toggle="validator">
-                                                <div class="form-group">
-                                                    <label for="address">Адрес</label>
-                                                    <textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="step-4">
-                                            <h2>test</h2>
-                                            <div id="form-step-3" role="form" data-toggle="validator">
-                                                <div class="form-group">
-                                                    <label for="address">test</label>
-                                                    <textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="step-5">
-                                            <h2>test</h2>
-                                            <div id="form-step-4" role="form" data-toggle="validator">
-                                                <div class="form-group">
-                                                    <label for="address">test</label>
-                                                    <textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="step-6">
-                                            <h2>test</h2>
-                                            <div id="form-step-5" role="form" data-toggle="validator">
-                                                <div class="form-group">
-                                                    <label for="address">test</label>
-                                                    <textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="step-7" class="">
-                                            <h2>Последний шаг</h2>
-                                            <p>Данные, введенные мною, актуальны и соответсвуют действительности.</p>
-                                            <div id="form-step-6" role="form" data-toggle="validator">
-                                                <div class="form-group">
-                                                    <label for="terms">Да</label>
-                                                    <input type="checkbox" id="terms" data-error="Please accept the Terms and Conditions" required>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!--<li><a href="#step-7"><small>Terms and Conditions</small></a></li>-->
+        <!--</ul>-->
+        <!--<div>-->
+        <!--<div id="step-1">-->
+        <!--<h2>Выберите врача</h2>-->
+        <!--<div id="form-step-0" role="form" data-toggle="validator">-->
+        <!--<div class="form-group">-->
+        <!--<select class="form-control">-->
+        <!--<option>Выберите специалиста</option>-->
+        <!--<option>Терапевт</option>-->
+        <!--<option>Хирург</option>-->
+        <!--<option>Стоматолог</option>-->
+        <!--<option>Аллерголог-Иммунолог</option>-->
+        <!--<option>Гастроэнтеролог</option>-->
+        <!--<option>Гастроэнтеролог</option>-->
+        <!--<option>Гинеколог</option>-->
+        <!--<option>Дерматолог</option>-->
+        <!--<option>Кардиолог</option>-->
+        <!--<option>ЛОР (отоларинголог)</option>-->
+        <!--<option>Невролог</option>-->
+        <!--<option>Окулист</option>-->
+        <!--<option>Онколог</option>-->
+        <!--<option>Проктолог</option>-->
+        <!--<option>Пульмонолог</option>-->
+        <!--<option>Ревматолог</option>-->
+        <!--<option>Травматолог</option>-->
+        <!--<option>Уролог</option>-->
+        <!--<option>Эндокринолог</option>-->
+        <!--</select>-->
+        <!--<div class="help-block with-errors"></div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div id="step-2">-->
+        <!--<h2>Не нашли нужного врача в Казани?</h2>-->
+        <!--<div id="form-step-1" role="form" data-toggle="validator">-->
+        <!--<div class="form-group">-->
+        <!--<input type="tel" class="form-control" id="phone" placeholder="Телефон">-->
+        <!--<div class="help-block with-errors"></div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div id="step-3">-->
+        <!--<h2>Ваш адрес</h2>-->
+        <!--<div id="form-step-2" role="form" data-toggle="validator">-->
+        <!--<div class="form-group">-->
+        <!--<label for="address">Адрес</label>-->
+        <!--<textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>-->
+        <!--<div class="help-block with-errors"></div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div id="step-4">-->
+        <!--<h2>test</h2>-->
+        <!--<div id="form-step-3" role="form" data-toggle="validator">-->
+        <!--<div class="form-group">-->
+        <!--<label for="address">test</label>-->
+        <!--<textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>-->
+        <!--<div class="help-block with-errors"></div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div id="step-5">-->
+        <!--<h2>test</h2>-->
+        <!--<div id="form-step-4" role="form" data-toggle="validator">-->
+        <!--<div class="form-group">-->
+        <!--<label for="address">test</label>-->
+        <!--<textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>-->
+        <!--<div class="help-block with-errors"></div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div id="step-6">-->
+        <!--<h2>test</h2>-->
+        <!--<div id="form-step-5" role="form" data-toggle="validator">-->
+        <!--<div class="form-group">-->
+        <!--<label for="address">test</label>-->
+        <!--<textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>-->
+        <!--<div class="help-block with-errors"></div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div id="step-7" class="">-->
+        <!--<h2>Последний шаг</h2>-->
+        <!--<p>Данные, введенные мною, актуальны и соответсвуют действительности.</p>-->
+        <!--<div id="form-step-6" role="form" data-toggle="validator">-->
+        <!--<div class="form-group">-->
+        <!--<label for="terms">Да</label>-->
+        <!--<input type="checkbox" id="terms" data-error="Please accept the Terms and Conditions" required>-->
+        <!--<div class="help-block with-errors"></div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</form>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
 
         <div class="parallax animated" id="element-to-animate2">
             <div class="text-center">
@@ -367,7 +366,8 @@
                 <div class="col-lg-12">
                     <form action="" method="" class="form-horizontal">
                         <div class="form-group">
-                            <label for="" class="col-lg-2 col-md-4 col-lg-offset-2 control-label">Выберите врача:</label>
+                            <label for="" class="col-lg-2 col-md-4 col-lg-offset-2 control-label label-select-doctor">Выберите
+                                врача:</label>
                             <div class="col-lg-6 col-md-8">
                                 <select class="form-control">
                                     <option>Выберите специалиста</option>
