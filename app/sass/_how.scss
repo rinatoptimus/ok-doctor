@@ -1,8 +1,14 @@
 .container-how {
   margin-top: 115px;
+  @include phone-lg {
+    margin-top: 10px;
+  }
     .row {
       .col-md-9 {
         padding-left: 70px;
+        @include phone-lg {
+          padding-left: 20px;
+        }
       }
     }
 }
@@ -10,6 +16,10 @@
   width: 309px;
   height: 309px;
   background: url('../img/character-woman.png') no-repeat;
+  @include phone-lg {
+    width: 300px;
+    height: 300px;
+  }
 }
 .how-title-upper {
   font-family: 'Roboto',sans-serif;

@@ -1,6 +1,9 @@
 h2 {
   margin-top: 37px;
   margin-bottom: 84px;
+  @include phone-lg {
+    margin-bottom: 20px;
+  }
 }
 .why-img {
   width: 100px;

@@ -9,6 +9,10 @@
       color: $black;
       text-align: center;
       line-height: 1.55;
+      @include phone-lg {
+        margin-top: 16px;
+        margin-bottom: 20px;
+      }
     }
   }
 }

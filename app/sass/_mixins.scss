@@ -1,3 +1,4 @@
+$phone-mini: 320px;
 $phone: 400px;
 $phone-lg: 570px;
 $small-devices: 768px;
@@ -5,7 +6,13 @@ $medium-desktop: 970px;
 $medium-desktop-lg: 992px;
 $large-desktop: 1200px;
 $large-desktop-lg: 1400px;
+$xl: 2560px;
 
+@mixin phone-mini {
+  @media (max-width: #{$phone-mini + 1px}) {
+    @content;
+  }
+}
 @mixin phone {
   @media (max-width: #{$phone + 1px}) {
     @content;
@@ -38,6 +45,12 @@ $large-desktop-lg: 1400px;
 }
 @mixin large-desktop-lg {
   @media (max-width: #{$large-desktop-lg + 1px}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: #{$xl - 1px}) {
     @content;
   }
 }

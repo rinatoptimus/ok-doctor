@@ -14,6 +14,10 @@
   margin-top: 82px;
   margin-bottom: 2px;
   font-size: 76px;
+  @include phone-lg {
+    margin-top: 10px;
+    font-size: 50px;
+  }
 }
 .letter-o {
   color: $letter-o;
@@ -41,13 +45,7 @@
       }
     }
 }
-small {
-  display: inline-block;
-  width: 335px;
-  line-height: 19px;
-  font-family: 'Open Sans';
-  font-size: 13px;
-}
+
 .btn-know-more {
   margin-top: 22px;
   padding: 14px 33px;
@@ -66,11 +64,20 @@ small {
   @include large-desktop {
     text-align: center;
   }
+  small {
+    display: inline-block;
+    width: 335px;
+    line-height: 19px;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    @include phone-lg {
+      width: 300px;
+    }
+  }
 }
 
 
 .jumbotron-well {
-  //width: 615px;
   margin-top: 86px;
   padding-top: 6px;
   padding-bottom: 23px;
@@ -80,34 +87,72 @@ small {
   color: $white;
   @include large-desktop {
     max-width: 940px;
+    margin-left: 0;
+  }
+  @include phone-lg {
+    max-width: 940px;
+    margin-left: 0;
+  }
+  @include phone {
+    padding-left: 17px;
   }
     h5 {
-      display: inline-block;
-      width: 170px;
       font-size: 20px;
       text-align: center;
+      width: 200px;
+      margin-left: -20px;
+      @include xl {
+        width: 200px;
+        margin-left: -20px;
+      }
       @include large-desktop {
-        width: 250px;
-        margin-left: 110px;
+        width: 100%;
+        margin-left: -10px;
+      }
+      @include medium-desktop-lg {
+        margin-left: 5px;
+      }
+      @include small-devices {
+        margin-left: 44px;
+      }
+      @include phone-lg {
+        margin-left: -15px;
+        font-size: 17px;
+      }
+      @include phone {
+        margin-left: 0;
       }
     }
+  .row {
+    div {
+      @include small-devices {
+        display: flex;
+      }
+      @include phone-lg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
 }
 .col-left {
   display: block;
-  //flex-direction: row;
-  //margin-left: 0;
-  //padding-left: 0;
-  @include small-devices {
-    flex-direction: column;
-  }
   @include large-desktop {
     display: flex;
-    flex-direction: column;
-    margin-left: 75px;
-    padding-left: 5px;
+    flex-direction: row;
+    justify-content: space-between;
   }
   @include medium-desktop-lg {
     flex-direction: row;
+  }
+  @include medium-desktop {
+  }
+  @include small-devices {
+    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 .row {
@@ -129,6 +174,10 @@ small {
   @include large-desktop {
     width: 64%;
   }
+  @include phone-lg {
+    width: 100%;
+    font-size: 14px;
+  }
 }
 .btn-jumbotron-first {
   padding: 15px 25px;
@@ -149,6 +198,9 @@ small {
   &:hover {
     color: $white;
     background-color: $btn-sign-in;
+  }
+  @include phone-lg {
+    padding: 16px 65px;
   }
 }
 .form-text {
@@ -196,7 +248,8 @@ small {
   box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, .5);
 
   @include large-desktop {
-    margin-right: 25px;
+    display: flex;
+    flex-direction: row;
     margin-bottom: 35px;
   }
   @include small-devices {
@@ -208,6 +261,26 @@ small {
   height: 101px;
   background: url(../img/card1.jpg) no-repeat;
   background-size: 100%;
+  @include large-desktop {
+    width: 255px;
+    height: 159px;
+  }
+  @include medium-desktop {
+    width: 200px;
+    height: 124px;
+  }
+  @include small-devices {
+    width: 180px;
+    height: 137px;
+  }
+  @include phone-lg {
+    width: 272px;
+    height: 175px;
+  }
+  @include phone {
+    width: 200px;
+    height: 126px;
+  }
 
 }
 .card-two {
@@ -215,10 +288,46 @@ small {
   height: 94px;
   background: url('../img/card2.jpg') no-repeat;
   background-size: 100%;
+  @include large-desktop {
+    width: 255px;
+    height: 147px;
+  }
+  @include medium-desktop {
+    width: 200px;
+    height: 115px;
+  }
+  @include small-devices {
+    width: 180px;
+    height: 137px;
+  }
+  @include phone-lg {
+    width: 272px;
+    height: 157px;
+  }
+  @include phone {
+    width: 200px;
+    height: 126px;
+  }
 }
 .card-three {
   width: 163px;
   height: 100px;
   background: url('../img/card3.jpg') no-repeat;
   background-size: 100%;
+  @include large-desktop {
+    width: 255px;
+    height: 160px;
+  }
+  @include medium-desktop {
+    width: 200px;
+    height: 124px;
+  }
+  @include phone-lg {
+    width: 272px;
+    height: 178px;
+  }
+  @include phone {
+    width: 200px;
+    height: 126px;
+  }
 }

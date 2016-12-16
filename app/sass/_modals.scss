@@ -5,10 +5,19 @@
       text-align: center;
         .modal-header {
           border-bottom: none;
+          .close {
+            font-size: 21px;
+            @include phone-lg {
+              font-size: 35px;
+            }
+          }
             .modal-title {
               font-size: 36px;
               font-family: 'Roboto', sans-serif;
               font-weight: 600;
+              @include phone-lg {
+                font-size: 16px;
+              }
             }
           small {
             font-size: 16px;
@@ -34,6 +43,24 @@
             &:hover {
               background-color: $btn-modal-hover;
             }
+            @include phone-lg {
+              padding: 19px 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  .modal-dialog {
+    .modal-content {
+      .modal-header {
+        .close {
+          font-size: 21px;
+          @include phone-lg {
+            font-size: 35px;
           }
         }
       }

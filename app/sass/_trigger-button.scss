@@ -1,9 +1,9 @@
 .bg-trigger-button {
-  padding: 97px 20px;
+  padding: 97px 10px;
   background-color: $bg-trigger-button;
 }
 .trigger-btn {
-  padding: 18px 70px;;
+  padding: 18px 70px;
   //background-color: $blue-light;
   border: 2px solid $white;
   //border-radius: 25px;
@@ -14,5 +14,8 @@
     color: $btn-sign-in;
     text-decoration: none;
     background-color: $white;
+  }
+  @include phone-lg {
+    padding: 18px 10px;
   }
 }
